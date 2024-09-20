@@ -19,27 +19,20 @@ README.md # Documentation
 
 1. Clone the repository:
 
-    ```bash
-    git clone https://github.com/yourusername/rag-qa-system.git
-    ```
+    git clone https://github.com/Meenakshi-Projects/OSL_Assignment01.git
+
 
 2. Install the required dependencies:
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+    pip install
 
 3. Add your OpenAI API key in `level1.py`:
 
-    ```python
     openai.api_key = 'your-api-key'
-    ```
 
 4. Run the application:
 
-    ```bash
     python level1.py
-    ```
 
 ## Features
 
@@ -49,8 +42,8 @@ README.md # Documentation
 - **Answer Generation**: Generates answers using OpenAI's GPT-3.5-turbo model.
 - **UI Integration**: Provides an interactive UI via Chainlit for asking questions and receiving answers.
 
-## Future Work
+## Level 2 Work
 
 - **Vector Store**: Integrate FAISS or Pinecone for scalable vector search.
-- **Data Sources**: Add more datasets (e.g., Wikipedia) and enable topic-based querying.
+- **Data Sources**: Add more datasets (Wikipedia) and enable topic-based querying.
 - **Containerization**: Dockerize the application for easy deployment.
