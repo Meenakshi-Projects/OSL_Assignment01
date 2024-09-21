@@ -1,17 +1,18 @@
 # OSL_Assignment01
 
-# QA System with RAG Approach
+# QA System with RAG Approach using Newsgroup data and Wikipedia Article 
 
 ## Overview
 
-This project implements a question-answering (QA) system using Retrieval-Augmented Generation (RAG). It integrates document retrieval, embedding-based similarity, and OpenAI’s GPT models to provide intelligent, context-aware answers. The system is built using Python and Chainlit for the UI, along with OpenAI for answer generation.
+This project implements a question-answering (QA) system retrieves relevant context from Wikipedia and a local dataset, using Retrieval-Augmented Generation (RAG). It integrates document retrieval, embedding-based similarity, and OpenAI’s GPT models to provide intelligent, context-aware answers. The system is built using Python and Chainlit for the UI, along with OpenAI for answer generation.
 
 ## Project Structure
 Newsgroup_data/
 - rec.sport.baseball.txt
 - rec.sport.hockey.txt
-level1.py # Main code
-documentation-level1.docx # detailed documentation
+level1.py and level_2.py # Main code
+requirements.txt # libraries and dependencies project needs
+documentation-level1.docx/ documentation-level1 # detailed documentation
 README.md # Documentation
 
 
@@ -29,10 +30,13 @@ README.md # Documentation
 3. Add your OpenAI API key in `level1.py`:
 
     openai.api_key = 'your-api-key'
+   
+5. Install all the dependencies using 
+requirements.txt
 
 4. Run the application:
 
-    python level1.py
+    chainlit run [level1.py, level_2.py]
 
 ## Features
 
@@ -44,6 +48,9 @@ README.md # Documentation
 
 ## Level 2 Work
 
-- **Vector Store**: Integrate FAISS or Pinecone for scalable vector search.
-- **Data Sources**: Add more datasets (Wikipedia) and enable topic-based querying.
+- **Vector Store**: Integrate FAISS for scalable vector search, used cosine similarity to find best match.
+- **Data Sources**: Add more datasets (Wikipedia) and enabled topic-based querying.
+- **Labaled data sourc** : Whether data coming from RAG or GPT
+
+## Future Work
 - **Containerization**: Dockerize the application for easy deployment.
