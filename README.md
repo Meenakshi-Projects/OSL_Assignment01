@@ -43,11 +43,8 @@ requirements.txt
 - **Data Preprocessing**: Load and clean text data from the 20 Newsgroups dataset.
 - **Embedding Generation**: Uses SentenceTransformer to generate embeddings.
 - **Document Retrieval**: Retrieves relevant documents based on semantic similarity.
-- **Answer Generation**: Generates answers using OpenAI's GPT-3.5-turbo model.
+- **Answer Generation**: Generates answers using OpenAI's GPT-3.5-turbo and GPT-4 model.
 - **UI Integration**: Provides an interactive UI via Chainlit for asking questions and receiving answers.
-
-## Level 2 Work
-
 - **Vector Store**: Integrate FAISS for scalable vector search, used cosine similarity to find best match.
 - **Data Sources**: Add more datasets (Wikipedia) and enabled topic-based querying.
 - **Labaled data sourc** : Whether data coming from RAG or GPT
